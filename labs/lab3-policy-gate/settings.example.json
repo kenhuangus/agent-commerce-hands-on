@@ -1,0 +1,1 @@
+{"hooks":{"PreToolUse":[{"hooks":[{"command":"python3 labs/lab3-policy-gate/policy_gate.py","type":"command"}],"matcher":"place_order|process_refund|transfer"}]}}
