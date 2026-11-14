@@ -12,6 +12,40 @@ deck framing.
 **Workshop rule:** caps live in the wallet, gates live in code, never
 in the prompt.
 
+## The site is a slide deck
+
+`index.html` is a 21-slide deck, modelled on Ken's two source decks
+([agent-commerce-investment-stack](https://kenhuangus.github.io/agent-commerce-investment-stack/)
+and
+[agent-commerce-security-site](https://kenhuangus.github.io/agent-commerce-security-site/)):
+one slide fills the viewport, with the same navigation engine
+(`assets/deck.js`, no dependencies) — **Prev / Next** buttons,
+clickable **progress dots**, slide count, progress bar, **hash deep
+links** (`#12` opens slide 12), keyboard
+(→ / Space / PageDown = next, ← / PageUp = previous, Home / End,
+F = fullscreen), touch swipe, and a debounced wheel (a long lab slide
+scrolls internally first, then the wheel moves on). The top bar jumps
+straight to a section (Agenda, Protocols, Lab 1–4, Cases, Before).
+All three simulators and every code tab work inside the slides.
+
+| # | Slide | # | Slide |
+| --- | --- | --- | --- |
+| 1 | Cover | 12 | Lab 3 — Security Gates |
+| 2 | The Stack at a Glance | 13 | Lab 3 — Enforcement Points |
+| 3 | The Stack: Protocol, Data, Model | 14 | Lab 3 — Steps, Breaker & Outcome |
+| 4 | Agenda — 180 Minutes | 15 | Lab 4 — Poison the Memory |
+| 5 | Protocols 1 — Live Rails | 16 | Lab 4 — Score It: Completion under Policy |
+| 6 | Protocols 2 — Specs, Drafts & Volume | 17 | Use Cases 1 — Amazon vs Walmart |
+| 7 | Lab 1 — Charge a Machine | 18 | Use Cases 2 — Shopify & the Law |
+| 8 | Lab 1 — Seller & Buyer Code | 19 | Before You Come |
+| 9 | Lab 1 — Steps & Outcome | 20 | Open Questions & Sources |
+| 10 | Lab 2 — Checkout Without a Card | 21 | Closing |
+| 11 | Lab 2 — Steps & Outcome | | |
+
+Nothing was cut in the remodel: every section, lab, code block,
+simulator, table row, use case, and honest-flag from the scrolling
+page is on a slide, split across slides where a section was long.
+
 ## Agenda — 180 minutes, four builds
 
 | Time | Block | Lab |
