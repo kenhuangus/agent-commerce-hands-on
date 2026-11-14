@@ -14,37 +14,52 @@ in the prompt.
 
 ## The site is a slide deck
 
-`index.html` is a 21-slide deck, modelled on Ken's two source decks
+`index.html` is a 40-slide deck, modelled on Ken's two source decks
 ([agent-commerce-investment-stack](https://kenhuangus.github.io/agent-commerce-investment-stack/)
 and
 [agent-commerce-security-site](https://kenhuangus.github.io/agent-commerce-security-site/)):
-one slide fills the viewport, with the same navigation engine
-(`assets/deck.js`, no dependencies) — **Prev / Next** buttons,
+one slide fills the viewport, with a self-contained deck engine
+(no dependencies) — **Prev / Next** buttons,
 clickable **progress dots**, slide count, progress bar, **hash deep
-links** (`#12` opens slide 12), keyboard
+links** (`#27` opens slide 27), keyboard
 (→ / Space / PageDown = next, ← / PageUp = previous, Home / End,
-F = fullscreen), touch swipe, and a debounced wheel (a long lab slide
-scrolls internally first, then the wheel moves on). The top bar jumps
-straight to a section (Agenda, Protocols, Lab 1–4, Cases, Before).
+F = fullscreen), touch swipe, and a wheel that scrolls inside a long
+slide first, then moves on. A grid overview (all 40 slides) is in the
+top bar. The top bar jumps straight to a section (Agenda, Protocols,
+Lab 1–4, Cases, Before).
 All three simulators and every code tab work inside the slides.
+Slides 1–21 are the original workshop; slides 22–40 add ten theories
+and eight practices on agent commerce (see table below).
 
 | # | Slide | # | Slide |
 | --- | --- | --- | --- |
-| 1 | Cover | 12 | Lab 3 — Security Gates |
-| 2 | The Stack at a Glance | 13 | Lab 3 — Enforcement Points |
-| 3 | The Stack: Protocol, Data, Model | 14 | Lab 3 — Steps, Breaker & Outcome |
-| 4 | Agenda — 180 Minutes | 15 | Lab 4 — Poison the Memory |
-| 5 | Protocols 1 — Live Rails | 16 | Lab 4 — Score It: Completion under Policy |
-| 6 | Protocols 2 — Specs, Drafts & Volume | 17 | Use Cases 1 — Amazon vs Walmart |
-| 7 | Lab 1 — Charge a Machine | 18 | Use Cases 2 — Shopify & the Law |
-| 8 | Lab 1 — Seller & Buyer Code | 19 | Before You Come |
-| 9 | Lab 1 — Steps & Outcome | 20 | Open Questions & Sources |
-| 10 | Lab 2 — Checkout Without a Card | 21 | Closing |
-| 11 | Lab 2 — Steps & Outcome | | |
+| 1 | Cover — Agentic commerce, hands on | 21 | Checkpoint — what you have built so far |
+| 2 | Stack at a glance — ecosystem to identity | 22 | Why theory? The map before the market |
+| 3 | Stack — protocol, data, model | 23 | Theory 1 — Principal–agent theory and agency costs |
+| 4 | Agenda — 180 minutes, four builds | 24 | Theory 2 — Transaction cost economics |
+| 5 | Protocols 1 — the live rails | 25 | Theory 3 — Two-sided markets and network effects |
+| 6 | Protocols 2 — specs, drafts and the volume argument | 26 | Theory 4 — Mechanism design and auction theory |
+| 7 | Lab 1 — x402 flow and simulator | 27 | Theory 5 — Negotiation theory and bargaining |
+| 8 | Lab 1 — seller and buyer code | 28 | Theory 6 — Contract theory and incomplete contracts |
+| 9 | Lab 1 — steps and done-when | 29 | Theory 7 — Trust and reputation systems |
+| 10 | Lab 2 — UCP discovery and ACP checkout code | 30 | Theory 8 — Information asymmetry, signalling, screening |
+| 11 | Lab 2 — steps, token scoping, done-when | 31 | Theory 9 — Delegation and mandates |
+| 12 | Lab 3 — policy simulator | 32 | Theory 10 — Payment and settlement theory |
+| 13 | Lab 3 — hook, wallet policy, awal CLI | 33 | Practice 1 — Personal agents in production |
+| 14 | Lab 3 — circuit breaker and steps | 34 | Practice 2 — Business agents and procurement |
+| 15 | Lab 4 — memory gate and CaMeL | 35 | Practice 3 — Agent identity and discovery in production |
+| 16 | Lab 4 — CuP calculator, benchmarks, pass bars | 36 | Practice 4 — Price discovery and dynamic pricing by agents |
+| 17 | Use cases — Amazon blocks Muse, Walmart opens | 37 | Practice 5 — Disputes, chargebacks, refunds |
+| 18 | Use cases — Shopify counters, the legal line | 38 | Practice 6 — Liability and insurance for agent errors |
+| 19 | Before you come — setup and capstone checklist | 39 | Practice 7 — Regulation: EU AI Act, PSD3, US states |
+| 20 | Open questions and primary sources — Part 1 | 40 | Practice 8 — Cost-per-task economics and capstone |
 
 Nothing was cut in the remodel: every section, lab, code block,
 simulator, table row, use case, and honest-flag from the scrolling
 page is on a slide, split across slides where a section was long.
+`assets/deck.js` is kept in the repo as the navigation engine from
+the 21-slide remodel; the 40-slide `index.html` carries the same
+engine inline.
 
 ## Agenda — 180 minutes, four builds
 
